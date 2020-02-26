@@ -6,4 +6,4 @@ https://arxiv.org/abs/1903.01888 (Best Student Paper Award at EUSIPCO 2019)
 
 Requirements: Python 3 + PyTorch
 
-For more info e-mail the authors at rubruiz,fgama@seas.upenn.edu
+For more info e-mail the authors at rubruiz@seas.upenn.edu ,fgama@seas.upenn.edu

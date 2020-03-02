@@ -41,7 +41,7 @@ from Utils.miscTools import saveSeed
 #####################################################################
 #
 seqLen = 10 # length in seconds of the waves sampled at 100 Hz
-downsampling = 50 # downsampling period in ms
+downsampling = 50 # downsampling factor; new frequency is given by 100/downsampling
 K = int(seqLen*100/downsampling) # number of samples in a sequence
 
 thisFilename = 'Epicenter Estimation' # This is the general name of all related files

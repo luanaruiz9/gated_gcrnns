@@ -40,7 +40,7 @@ from Utils.miscTools import saveSeed
 #                                                                   #
 #####################################################################
 #
-seqLen = 10 # length in seconds of the waves sampled at 10 Hz
+seqLen = 10 # length in seconds of the waves sampled at 100 Hz
 downsampling = 50 # downsampling period in ms
 K = int(seqLen*100/downsampling) # number of samples in a sequence
 

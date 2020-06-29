@@ -115,7 +115,7 @@ graphOptions['nCommunities'] = 5
 graphOptions['probIntra'] = 0.8 # Intracommunity probability
 graphOptions['probInter'] = 0.2 # Intercommunity probability
 
-nTrain = 5000 # Number of training samples
+nTrain = 2000 # Number of training samples
 nValid = int(0.24 * nTrain) # Number of validation samples
 nTest = 200 # Number of testing samples
 tMax = None # Maximum number of diffusion times (A^t for t < tMax)
@@ -165,7 +165,7 @@ lossFunction = misc.batchTimeL1Loss # This applies a softmax before feeding
     # it into the NLL, so we don't have to apply the softmax ourselves.
 
 #\\\ Overall training options
-nEpochs = 20 # Number of epochs
+nEpochs = 1 # Number of epochs
 batchSize = 100 # Batch size
 doLearningRateDecay = False # Learning rate decay
 learningRateDecayRate = 0.9 # Rate
@@ -217,7 +217,7 @@ modelList = []
 # Parameters to share across several architectures
 
 # Linear layer
-F1 = 5 # Number of features for the first layer
+F1 = 20 # Number of features for the first layer
 rnnStateFeat = 1 # Number of state features for the RNN
 K1 = 5 # Number of filter taps for the first layer, or number of attention heads
 # MLP layer
@@ -511,7 +511,7 @@ if doTimeEdgeGCRNN_MLP:
 doPrint = True # Decide whether to print stuff while running
 doLogging = False # Log into tensorboard
 doSaveVars = True # Save (pickle) useful variables
-doFigs = True # Plot some figures (this only works if doSaveVars is True)
+doFigs = False # Plot some figures (this only works if doSaveVars is True)
 # Parameters:
 printInterval = 0 # After how many training steps, print the partial results
 xAxisMultiplierTrain = 100 # How many training steps in between those shown in
